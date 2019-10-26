@@ -2,10 +2,10 @@
   "name": "boilerplate-webpack-react",
   "version": "1.0.0",
   "description": "boilerplate-webpack-react-description",
-  "homepage": "https://github.com/afeiship/boilerplate-webpack-react",
+  "homepage": "boilerplate-webpack-react-homepage",
   "author": {
-    "name": "afeiship",
-    "email": "1290657123@qq.com"
+    "name": "boilerplate-webpack-react-author",
+    "email": "boilerplate-webpack-react-email"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server",
