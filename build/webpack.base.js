@@ -1,3 +1,4 @@
+import path from 'path';
 import HtmlWepbackPlugin from 'html-webpack-plugin';
 
 export default (inEnv) => {
@@ -11,6 +12,11 @@ export default (inEnv) => {
           exclude: /node_modules/
         }
       ]
+    },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '../src')
+      }
     },
     plugins: [
       new HtmlWepbackPlugin({
