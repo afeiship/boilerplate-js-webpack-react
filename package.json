@@ -1,39 +1,32 @@
 {
-  "name": "boilerplate-webpack-react",
-  "version": "1.0.0",
-  "description": "boilerplate-webpack-react-description",
-  "homepage": "boilerplate-webpack-react-homepage",
-  "author": {
-    "name": "boilerplate-webpack-react-author",
-    "email": "boilerplate-webpack-react-email"
-  },
+  "name": "@jswork/boilerplate-js-webpack-react",
+  "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack -p"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/plugin-proposal-class-properties": "^7.0.0",
-    "@babel/plugin-proposal-decorators": "^7.0.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/plugin-transform-spread": "^7.0.0",
-    "@babel/preset-env": "^7.4.2",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.4.0",
-    "babel-loader": "^8.0.6",
-    "cross-env": "^6.0.3",
-    "html-webpack-plugin": "^3.2.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.9.0",
-    "webpack-merge": "^4.2.2"
+    "dev": "webpack-dev-server --open"
   },
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "babel-loader": "^8.2.3",
+    "css-loader": "3.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "prettier": "^2.5.0",
+    "source-map-loader": "0.2.4",
+    "style-loader": "1.0.0",
+    "webpack": "4.39.3",
+    "webpack-cli": "3.3.7",
+    "webpack-dev-server": "3.8.0"
+  },
+  "homepage": "https://js.work",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/afeiship/boilerplate-js-webpack-react.git"
   }
 }

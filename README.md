@@ -1,2 +1,2 @@
-# boilerplate-webpack-react
-> boilerplate-webpack-react-description
+# boilerplate-js-webpack-react
+> Tiny boilerplate for react based on webpack + javascript.
