@@ -1,8 +1,10 @@
-node_modules/
-public/bundle.js
-dist/
-package-lock.json
+node_modules
+bower_components
+coverage
+npm-debug.log
 yarn.lock
-
+package-lock.json
+.DS_Store
 .idea
 .vscode
+dist
