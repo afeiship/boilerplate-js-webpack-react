@@ -3,6 +3,10 @@ interface ReturnType {
   vacation: string[];
 }
 
+/**
+ * exchange: 每年假期里调休的周末部分
+ * vacation: 真正的假期部分，所以这个库，每年会调整一次，只能人肉维护
+ */
 export default (): ReturnType => {
   return {
     exchange: ['2022-04-02', '2022-04-24', '2022-05-07', '2022-10-08', '2022-10-09'],
