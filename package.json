@@ -1,5 +1,5 @@
 {
-  "name": "typescript-tsup-library",
+  "name": "file-hash",
   "version": "1.0.0",
   "description": "Build a typescript library with tsup.",
   "type": "module",
@@ -42,7 +42,7 @@
   },
   "homepage": "https://js.work",
   "keywords": [
-    "typescript-tsup-library",
+    "file-hash",
     "number",
     "num"
   ]
