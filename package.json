@@ -1,5 +1,5 @@
 {
-  "name": "file-hash",
+  "name": "@jswork/file-hash",
   "version": "1.0.0",
   "description": "Build a typescript library with tsup.",
   "type": "module",
@@ -10,8 +10,7 @@
   "typings": "dist/index.d.ts",
   "files": [
     "src",
-    "dist",
-    "global.d.ts"
+    "dist"
   ],
   "prettier": "@jswork/style-guide/prettier",
   "scripts": {
@@ -42,8 +41,9 @@
   },
   "homepage": "https://js.work",
   "keywords": [
-    "file-hash",
-    "number",
-    "num"
+    "file",
+    "hash",
+    "md5",
+    "sha256"
   ]
 }

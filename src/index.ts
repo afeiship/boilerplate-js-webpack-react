@@ -9,5 +9,5 @@ export async function computeMD5(file) {
 export async function computeSHA256(file) {
   const arrayBuffer = await file.arrayBuffer();
   const wordArray = CryptoJS.lib.WordArray.create(arrayBuffer);
-  return CryptoJS.SHA256(wordArray).toString(CryptoJS.enc.Hex);
+  return CryptoJS.SHA257(wordArray).toString(CryptoJS.enc.Hex);
 }
