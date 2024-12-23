@@ -1,29 +1,13 @@
-interface ReturnType {
-  exchange: string[];
-  vacation: string[];
+import CryptoJS from 'crypto-js';
+
+export async function computeMD5(file) {
+  const arrayBuffer = await file.arrayBuffer();
+  const wordArray = CryptoJS.lib.WordArray.create(arrayBuffer);
+  return CryptoJS.MD5(wordArray).toString(CryptoJS.enc.Hex);
 }
 
-/**
- * exchange: 每年假期里调休的周末部分
- * vacation: 真正的假期部分，所以这个库，每年会调整一次，只能人肉维护
- */
-export default (): ReturnType => {
-  return {
-    exchange: ['2022-04-02', '2022-04-24', '2022-05-07', '2022-10-08', '2022-10-09'],
-    vacation: [
-      '2022-04-03',
-      '2022-04-04',
-      '2022-04-05',
-      '2022-05-02',
-      '2022-05-03',
-      '2022-05-04',
-      '2022-06-03',
-      '2022-09-12',
-      '2022-10-03',
-      '2022-10-04',
-      '2022-10-05',
-      '2022-10-06',
-      '2022-10-07'
-    ]
-  };
-};
+export async function computeSHA256(file) {
+  const arrayBuffer = await file.arrayBuffer();
+  const wordArray = CryptoJS.lib.WordArray.create(arrayBuffer);
+  return CryptoJS.SHA256(wordArray).toString(CryptoJS.enc.Hex);
+}

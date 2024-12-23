@@ -1,5 +1,5 @@
-# calendar-vacation
-> Get calendar vacation.
+# typescript-tsup-library
+> Build a typescript library with tsup.
 
 [![version][version-image]][version-url]
 [![license][license-image]][license-url]
@@ -8,29 +8,29 @@
 
 ## installation
 ```shell
-npm install @jswork/calendar-vacation
+npm install @jswork/typescript-tsup-library
 ```
 
 ## usage
 ```js
-import calendarVacation from '@jswork/calendar-vacation';
+import fileHash from '@jswork/typescript-tsup-library';
 
-const { exchange, vacation } = calendarVacation();
-// ['2022-04-02', '2022-04-24', '2022-10-08', '2022-10-09']
-// ['2022-04-03', '2022-04-04', '2022-04-05', '2022-05-02', '2022-05-03',....]
+fileHash(1024);
+
+// [1000, 0, 20, 4]
 ```
 
 ## license
-Code released under [the MIT license](https://github.com/afeiship/calendar-vacation/blob/master/LICENSE.txt).
+Code released under [the MIT license](https://github.com/afeiship/typescript-tsup-library/blob/master/LICENSE.txt).
 
-[version-image]: https://img.shields.io/npm/v/@jswork/calendar-vacation
-[version-url]: https://npmjs.org/package/@jswork/calendar-vacation
+[version-image]: https://img.shields.io/npm/v/@jswork/typescript-tsup-library
+[version-url]: https://npmjs.org/package/@jswork/typescript-tsup-library
 
-[license-image]: https://img.shields.io/npm/l/@jswork/calendar-vacation
-[license-url]: https://github.com/afeiship/calendar-vacation/blob/master/LICENSE.txt
+[license-image]: https://img.shields.io/npm/l/@jswork/typescript-tsup-library
+[license-url]: https://github.com/afeiship/typescript-tsup-library/blob/master/LICENSE.txt
 
-[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/calendar-vacation
-[size-url]: https://github.com/afeiship/calendar-vacation/blob/master/dist/calendar-vacation.min.js
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/typescript-tsup-library
+[size-url]: https://github.com/afeiship/typescript-tsup-library/blob/master/dist/typescript-tsup-library.min.js
 
-[download-image]: https://img.shields.io/npm/dm/@jswork/calendar-vacation
-[download-url]: https://www.npmjs.com/package/@jswork/calendar-vacation
+[download-image]: https://img.shields.io/npm/dm/@jswork/typescript-tsup-library
+[download-url]: https://www.npmjs.com/package/@jswork/typescript-tsup-library
