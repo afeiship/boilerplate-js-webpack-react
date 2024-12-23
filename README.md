@@ -1,4 +1,5 @@
 # file-hash
+
 > A lightweight library for calculating MD5 and SHA256 hashes of files in the browser.
 
 [![version][version-image]][version-url]
@@ -18,13 +19,13 @@ npm install @jswork/file-hash
 ## usage
 
 ```js
-import { computeMD5, computeSHA256} from '@jswork/file-hash';
+import { computeMD5, computeSHA256 } from '@jswork/file-hash';
 
 const file = new File(['hello world'], 'hello.txt');
 const md5 = await computeMD5(file);
 const sha256 = await computeSHA256(file);
-console.log(md5, sha256); 
-// 7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069 
+console.log(md5, sha256);
+// 7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069
 // 4f8b42c22dd3729b519ba6f68d2da7cc5b2d606d05daed5ad5128cc03e6c6358
 ```
 
