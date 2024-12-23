@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>File Hash</h1>
+    <input type="file" id="file" />
+    <!-- import esm from online url -->
+    <script type="module">
+      // crypto-js
+      import CryptoJS from 'https://esm.sh/crypto-es';
+      import {
+        computeMD5,
+        computeSHA256
+      } from 'https://esm.sh/@jswork/file-hash/dist/index.esm.js';
+      console.log('esm package loaed', CryptoJS, computeMD5);
+      const fileInput = document.getElementById('file');
+      fileInput.addEventListener('change', async (event) => {
+        console.log('event: ', event);
+        const file = event.target.files[0];
+        console.log('file: ', file);
+        console.log('md5: ', await computeMD5(file));
+        console.log('sha256: ', await computeSHA256(file));
+      });
+    </script>
+  </body>
+</html>
