@@ -1,13 +1,16 @@
 import CryptoJS from 'crypto-js';
 
-export async function computeMD5(file) {
+async function file2wordArray(file) {
   const arrayBuffer = await file.arrayBuffer();
-  const wordArray = CryptoJS.lib.WordArray.create(arrayBuffer);
+  return CryptoJS.lib.WordArray.create(arrayBuffer);
+}
+
+export async function computeMD5(file) {
+  const wordArray = await file2wordArray(file);
   return CryptoJS.MD5(wordArray).toString(CryptoJS.enc.Hex);
 }
 
 export async function computeSHA256(file) {
-  const arrayBuffer = await file.arrayBuffer();
-  const wordArray = CryptoJS.lib.WordArray.create(arrayBuffer);
+  const wordArray = await file2wordArray(file);
   return CryptoJS.SHA256(wordArray).toString(CryptoJS.enc.Hex);
 }
